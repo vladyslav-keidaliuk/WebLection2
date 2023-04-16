@@ -1,0 +1,43 @@
+﻿@model PersonReview
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>InputView</title>
+    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+    <h5 class="bg-primary text-white text-center m-2 p-2">Review</h5>
+    <form asp-action="Input" method="post" class="m-2">
+        <div asp-validation-summary="All"></div>
+        <div class="form-group">
+            <label asp-for="Name" class="form-label">Your name:</label>
+            <input asp-for="Name" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label asp-for="Email" class="form-label">Your email:</label>
+            <input asp-for="Email" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label asp-for="Phone" class="form-label">Your phone:</label>
+            <input asp-for="Phone" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label asp-for="Review" class="form-label">Your review:</label>
+            <textarea asp-for="Review" class="form-control"></textarea> 
+        </div>
+        <div class="form-group">
+            <label asp-for="Mark" class="form-label">Your mark :</label>
+            <input asp-for="Mark" class="form-control" />
+        </div>
+
+            <button type="submit" class="btn btn-primary mt-3">Submit</button>
+    </form>
+</body>
+</html>

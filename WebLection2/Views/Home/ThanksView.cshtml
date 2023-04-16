@@ -1,0 +1,26 @@
+﻿@model PersonReview
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>ThanksView</title>
+    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.css" />
+</head>
+    <body class="text-center">
+        <div>
+            <h1>Thank you, @Model.Name, for your 
+                review and attention to our work.</h1>
+            <h4>We really appreciate that we 
+                have such responsive clients as you.
+                We will be sure to pass on your kind words to our team.</h4>
+            <h4>Best regards, Review Department.</h4>
+            <h4>Click  <a asp-action="List">hear</a> to 
+                see all reviews.</h4>
+        </div>
+
+
+</body>
+</html>
